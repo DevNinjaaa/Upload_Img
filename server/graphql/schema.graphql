@@ -1,0 +1,11 @@
+type Img {
+  EncData: String
+  FileName: String
+  FileType: String
+}
+type Query {
+  getImage(id: ID!): Img
+}
+type Mutation {
+  uploadImg(encData: String, fileName: String, fileType: String): Img
+}
